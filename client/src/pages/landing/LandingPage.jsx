@@ -1,5 +1,5 @@
 import Navbar from "@/components/landing/navbar/Navbar";
-import Hero from "@/components/landing/Hero";
+import Hero from "@/components/landing/hero/Hero";
 import ProductPreview from "@/components/landing/ProductPreview";
 import Features from "@/components/landing/Features";
 import Footer from "@/components/landing/Footer";

@@ -1,6 +1,6 @@
 import BrandLogo from "@/components/common/BrandLogo";
 import DesktopNav from "./DesktopNav";
-import { Menu } from "lucide-react";
+import MobileNav from "./MobileNav";
 
 export default function Navbar() {
   return (
@@ -11,9 +11,7 @@ export default function Navbar() {
 
         <DesktopNav />
 
-        <button className="rounded-lg p-2 hover:bg-slate-100 md:hidden">
-          <Menu className="h-6 w-6" />
-        </button>
+        <MobileNav />
 
       </div>
     </header>
