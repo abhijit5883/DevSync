@@ -1,17 +1,13 @@
 import Navbar from "@/components/landing/navbar/Navbar";
 import Hero from "@/components/landing/hero/Hero";
-import ProductPreview from "@/components/landing/ProductPreview";
-import Features from "@/components/landing/Features";
-import Footer from "@/components/landing/Footer";
+import Features from "@/components/landing/features/Features";
 
 export default function LandingPage() {
   return (
     <>
       <Navbar />
       <Hero />
-      <ProductPreview />
       <Features />
-      <Footer />
     </>
   );
 }
