@@ -1,6 +1,7 @@
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Link } from "react-router-dom";
 
 import BrandLogo from "@/components/common/BrandLogo";
 import NavLinks from "./NavLinks";
@@ -42,13 +43,18 @@ export default function MobileNav() {
             {/* CTA */}
             <div className="mt-auto border-t px-6 py-6">
               <div className="space-y-3">
-                <Button className="w-full rounded-xl bg-sky-500 hover:bg-sky-600">
-                  Get Started
-                </Button>
 
-                <Button variant="outline" className="w-full rounded-xl">
-                  Sign In
-                </Button>
+                <Link to="/register">
+                  <Button className="w-full rounded-xl bg-sky-500 hover:bg-sky-600">
+                    Get Started
+                  </Button>
+                </Link>
+
+                <Link to="/login">
+                  <Button variant="outline" className="w-full rounded-xl">
+                    Sign In
+                  </Button>
+                </Link>
               </div>
 
               <p className="mt-8 text-center text-xs text-slate-400">

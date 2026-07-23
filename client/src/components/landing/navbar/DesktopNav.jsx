@@ -1,5 +1,7 @@
 import NavLinks from "./NavLinks";
 import { Button } from "@/components/ui/button";
+import {Link} from "react-router-dom";
+
 
 export default function DesktopNav() {
   return (
@@ -9,13 +11,12 @@ export default function DesktopNav() {
       </nav>
 
       <div className="flex items-center gap-3">
-        <Button variant="ghost">
-          Sign In
-        </Button>
-
-        <Button className="rounded-xl bg-sky-500 hover:bg-sky-600">
-          Get Started
-        </Button>
+        <Link to="/login">
+          <Button variant="outline">Sign In</Button>
+        </Link>
+        <Link to="/register">
+          <Button>Get Started</Button>
+        </Link>
       </div>
     </div>
   );
